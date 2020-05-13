@@ -34,6 +34,7 @@ namespace Praktika
             FrameworkElement grid = (FrameworkElement)button.Parent;
             DopInfo dopInfo = new DopInfo(grid.Tag.ToString());
             dopInfo.Show();
+            MessageBox.Show("Название выбранного парка: {0}",grid.Tag.ToString());
         }
 
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
