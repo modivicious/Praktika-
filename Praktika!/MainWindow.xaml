@@ -51,32 +51,5 @@
                 </ListBox>
             </StackPanel>
         </ScrollViewer>
-
-
-        <!--<ScrollViewer Grid.Row="1">
-            <StackPanel Margin="0 0" Grid.Row="2">
-                <ListBox x:Name="ListViewTechnoparks" HorizontalContentAlignment="Stretch">
-                    <Border Margin="15" Width="720" Height="60" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                        <Grid Tag="{Binding Name}">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="100"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid Grid.Column="0">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="30"/>
-                                    <RowDefinition Height="*"/>
-                                </Grid.RowDefinitions>
-                                <TextBlock Grid.Row="0" x:Name="NameOfTechnoparks" Text="dddddd" Margin="5 5" Width="600" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="17" FontFamily="Verdana"/>
-                                <TextBlock Grid.Row="1" Text="dfdd" Margin="25 0"/>
-                            </Grid>
-                            <Grid Width="100" Grid.Column="1">
-                                <Button x:Name="DopInfo" Content="Подробнее..." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="DopInfo_Click" Width="80" Height="30"/>
-                            </Grid>
-                        </Grid>
-                    </Border>
-                </ListBox>
-            </StackPanel>
-        </ScrollViewer>-->
     </Grid>
 </Window>
