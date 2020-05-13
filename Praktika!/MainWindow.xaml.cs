@@ -25,7 +25,7 @@ namespace Praktika
             InitializeComponent();
             TechnoPark[] Parks = ParksData.GetParks();
             ListViewTechnoparks.ItemsSource = Parks;
-            //aaaaaaaaaaaaaaaaaaa
+            //Бананы не существуют
         }
 
         private void DopInfo_Click(object sender, RoutedEventArgs e)
