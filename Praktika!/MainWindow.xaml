@@ -13,7 +13,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF2255" Width="600" Height="50" Grid.RowSpan="1" FontFamily="Arial" FontSize="35" Margin="60 25" Text="Технопарки Москвы"/>
-        <TextBox  x:Name="SearchTextBox" TextChanged="SearchTextBox_TextChanged" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,41,118,41" Width="150"/>
+        <TextBox x:Name="SearchTextBox" TextChanged="SearchTextBox_TextChanged" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,41,118,41" Width="150"/>
         <Grid Margin="-8,33,67.6,36">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="319*"/>

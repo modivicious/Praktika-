@@ -25,6 +25,7 @@ namespace Praktika
             InitializeComponent();
             TechnoPark[] Parks = ParksData.GetParks();
             ListViewTechnoparks.ItemsSource = Parks;
+            //aaaaaaaaaaaaaaaaaaa
         }
 
         private void DopInfo_Click(object sender, RoutedEventArgs e)
