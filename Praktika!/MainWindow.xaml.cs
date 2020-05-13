@@ -25,7 +25,6 @@ namespace Praktika
             InitializeComponent();
             TechnoPark[] Parks = ParksData.GetParks();
             ListViewTechnoparks.ItemsSource = Parks;
-            //Бананы не существуют
         }
 
         private void DopInfo_Click(object sender, RoutedEventArgs e)
@@ -34,8 +33,6 @@ namespace Praktika
             FrameworkElement grid = (FrameworkElement)button.Parent;
             DopInfo dopInfo = new DopInfo(grid.Tag.ToString());
             dopInfo.Show();
-            MessageBox.Show("Название выбранного парка: {0}",grid.Tag.ToString());
-            MessageBox.Show("А тут ничего");
         }
 
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
