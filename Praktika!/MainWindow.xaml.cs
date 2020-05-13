@@ -35,6 +35,7 @@ namespace Praktika
             DopInfo dopInfo = new DopInfo(grid.Tag.ToString());
             dopInfo.Show();
             MessageBox.Show("Название выбранного парка: {0}",grid.Tag.ToString());
+            MessageBox.Show("А тут ничего");
         }
 
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
