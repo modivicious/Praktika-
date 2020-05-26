@@ -38,7 +38,7 @@
                                             <TextBlock Text="Специалитет:" FontSize="14" Foreground="#EEEEDD"/>
                                             <TextBlock Text="{Binding Specialty[0].Specialty}" FontSize="13" Foreground="#CCDDCC" Width="800" TextWrapping="Wrap" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
                                         </Grid>
-                                        <Grid Height="100" Margin="10 10">
+                                        <Grid Height="110" Margin="10 10">
                                             <TextBlock Text="Инфраструктура:" FontSize="14" Foreground="#EEEEDD"/>
                                             <TextBlock Text="{Binding Infrastructure}" FontSize="13" Foreground="#CCDDCC" Width="800" TextWrapping="Wrap" Height="40" VerticalAlignment="Top" Margin="0 20" HorizontalAlignment="Left"/>
                                         </Grid>
