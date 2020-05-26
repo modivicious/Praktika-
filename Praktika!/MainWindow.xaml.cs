@@ -21,6 +21,7 @@ namespace Praktika
     {
         public MainWindow()
         {
+            
             ParksData.LoadData("ProgramData.json");
             InitializeComponent();
             TechnoPark[] Parks = ParksData.GetParks();

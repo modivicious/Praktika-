@@ -22,22 +22,16 @@ namespace Praktika
     {
 
         private static TechnoPark[] _parks;
-        public static void LoadData(string path)
+
+        public static void LoadData(string fileName)
         {
-            var fullPath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), path);
-            var file = new FileInfo(fullPath);
-            FileStream fileStream = file.OpenRead();
+            var fullPath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), fileName);
 
-            byte[] array = new byte[(int)fileStream.Length];
-            fileStream.Read(array, 0, array.Length);
+            var jsonString = File.ReadAllText(fullPath, Encoding.Default);
 
-            fileStream.Close();
+            JObject jobject = JObject.Parse(jsonString);
 
-            var jsonString = Encoding.Default.GetString(array);
-
-            JObject JObject = JObject.Parse(jsonString);
-
-            var parks = JObject["Parks"].ToList();
+            var parks = jobject["Parks"].ToList();
 
             _parks = new TechnoPark[parks.Count];
 
@@ -69,7 +63,7 @@ namespace Praktika
 
     class TechnoPark
     {
-        public string Name { get; set; }
+        public string Name { get; set;}
 
         public string Infrastructure { get; set; }
 
@@ -81,7 +75,6 @@ namespace Praktika
 
         public List<SpecialtyItem> Specialty { get; set; }
     }
-
 
     public class PublicPhoneItem
     {
